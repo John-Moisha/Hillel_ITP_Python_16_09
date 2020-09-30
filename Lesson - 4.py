@@ -97,9 +97,15 @@
 # print(result_str)
 # print('abc' in my_str_list)
 #
-value = input()
+# value = input()
+#
+# if value in ["01", "03", "05" ,"07" ,"08" ,"10" ,"12", "yanvar"]:
+#     print("31")
+# elif value in ["04", "06", "11"]:
+#     print("30")
 
-if value in ["01", "03", "05" ,"07" ,"08" ,"10" ,"12", "yanvar"]:
-    print("31")
-elif value in ["04", "06", "11"]:
-    print("30")
+
+my_indexes = [10, 25, 50, 145, 70]
+my_string = [0, 1, 2, 4, 3]
+for index in my_string:
+	print(my_indexes[index])
