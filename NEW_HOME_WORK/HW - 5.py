@@ -21,7 +21,7 @@ my_list3_2 = [10, 20, 30, 40, 50, 60, 70, 80]
 my_result3 = []
 for symbol in my_list3_1[1::2]:
     my_result3.append(symbol)
-for symbol in my_list3_2[1::2]:
+for symbol in my_list3_2[0::2]:
     my_result3.append(symbol)
 print(my_result3)
 
