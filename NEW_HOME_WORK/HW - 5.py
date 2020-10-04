@@ -17,14 +17,15 @@ print(len(count2))
 # вначале поместить четные элементы (именно элементы) из my_list_1 и потом нечетные элементы из my_list_2.
 # my_list_1 = [1,2,3,4,5], my_list_2 = [10, 15, 20, 25] -> my_result [2, 4, 15, 25]
 my_list3_1 = [1, 2, 3, 4, 5, 6]
-my_list3_2 = [10, 20, 30, 40, 50, 60, 70, 80]
+my_list3_2 = [10, 20, 31, 45, 50, 67, 70, 80]
 my_result3 = []
-for symbol in my_list3_1[1::2]:
-    my_result3.append(symbol)
-for symbol in my_list3_2[0::2]:
-    my_result3.append(symbol)
+for symbol in my_list3_1:
+    if symbol % 2 == 0:
+        my_result3.append(symbol)
+for symbol in my_list3_2:
+    if symbol % 2 != 0:
+        my_result3.append(symbol)
 print(my_result3)
-
 
 # 4. дан список my_list. создать список new_list у которого первый элемент из my_list
 # стоит на последнем месте. если my_list [1,2,3,4], то new_list [2,3,4,1]
