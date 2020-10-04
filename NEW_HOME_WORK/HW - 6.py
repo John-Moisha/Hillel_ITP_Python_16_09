@@ -73,34 +73,14 @@
 # 7. Даны две строки. Создать список в который поместить те символы, которые есть в обеих строках,
 # но в каждой только по одному разу.
 
-str7_1 = 'aaaassseeeedffh'
-str7_2 = 'skdfhgskjkjsfkyshdfkjhsdkfh'
+str7_1 = 'aaaassseeeedffhycctz'
+str7_2 = 'aaaassseeeedffhyztttc'
+result7 = []
 uni_str7_1 = [s for s in str7_1 if str7_1.count(s) == 1]
 uni_str7_2 = [s for s in str7_2 if str7_2.count(s) == 1]
-print(uni_str7_1)
-print(uni_str7_2)
-result7 = []
-result 7
-
-for s in set(uni_str7_2).intersection(set(uni_str7_1)):
-    result7.append(s)
+for _ in list(set(uni_str7_2).intersection(set(uni_str7_1))):
+    result7.append(_)
 print(result7)
-result7_1 = []
-
-# # print(str7_1.count('0'))
-# for s in str7_2:
-#     if str7_1.count(s) == 1:
-#         result7_1.append(s)
-# print(result7_1)
-# print(uni_str7_1)
-# print(result7)
-# print(count.str7_1)
-
-# print(result7)
-# print(set(str7_1))
-# print(set(str7_2))
-
-
 
 # 8. Описать с помощью словаря следующую структуру для конкретного человека (можно придумать):
 # Фамилия
