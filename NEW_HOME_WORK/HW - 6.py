@@ -73,14 +73,14 @@
 # 7. Даны две строки. Создать список в который поместить те символы, которые есть в обеих строках,
 # но в каждой только по одному разу.
 
-str7_1 = 'aaaassseeeedffhycctz'
-str7_2 = 'aaaassseeeedffhyztttc'
-result7 = []
-uni_str7_1 = [s for s in str7_1 if str7_1.count(s) == 1]
-uni_str7_2 = [s for s in str7_2 if str7_2.count(s) == 1]
-for _ in list(set(uni_str7_2).intersection(set(uni_str7_1))):
-    result7.append(_)
-print(result7)
+# str7_1 = 'aaaassseeeedffhycctz'
+# str7_2 = 'aaaassseeeedffhyztttc'
+# result7 = []
+# uni_str7_1 = [s for s in str7_1 if str7_1.count(s) == 1]
+# uni_str7_2 = [s for s in str7_2 if str7_2.count(s) == 1]
+# for _ in list(set(uni_str7_2).intersection(set(uni_str7_1))):
+#     result7.append(_)
+# print(result7)
 
 # 8. Описать с помощью словаря следующую структуру для конкретного человека (можно придумать):
 # Фамилия
@@ -93,21 +93,33 @@ print(result7)
 # Работа
 #     Наличие
 #     Должность
-# 
+#
+# Mesto = ["Israel", "Karmiel", "Dizingof '8'"]
+# Work = ["Have Work", "Worker"]
+# Persona8 = {"SName" : "Ivanov",
+#             "FName" : "Ivan",
+#             "Age" : "33",
+#             "Live in" : Mesto,
+#             "Work" : Work}
+# print(Persona8)
+
 # 9. Описать с помощью словаря следующую структуру (рецепт ненастоящего торта,
 # придумать и указать граммы для продуктов):
-# Составляющие
-#     Коржи
-#         Мука
-#         Молоко
-#         Масло
-#         Яйцо
-#     Крем
-#         Сахар
-#         Масло
-#         Ваниль
-#         Сметана
-#     Глазурь
-#         Какао
-#         Сахар
-#         Масло
+
+Korj = {"Мука": "200 г.",
+        "Молоко": "0,5 л.",
+        "Масло": "150 г.",
+        "Яйцо": "3 шт."}
+Krem =  {"Сахар": "0,6 Кг.",
+        "Масло": "50 г.",
+        "Ваниль": "0,02 Кг.",
+        "Сметана": "3 Ст.Л."}
+Glazur = {"Какао": "1 стакан",
+        "Сахар": "0,15 Кг.",
+        "Масло": "30 г."}
+Ing_step = {"Корж": Korj,
+            "Крем": Krem,
+            "Глазурь": Glazur}
+Tort = {"Состовляющие": Ing_step}
+
+print(Tort)

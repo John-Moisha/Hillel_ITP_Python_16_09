@@ -64,8 +64,8 @@ my_set2_2 = {2, 3, 4, 2, 5, 5}
 # two_inter = inter
 # print(inter, my_set2_1, inter is two_inter)
 # #2 и там и там №1 тетрадь возвращает#
-my_set2_1.intersection_update(my_set2_2)
-print(my_set2_1)
+# my_set2_1.intersection_update(my_set2_2)
+# print(my_set2_1)
 # #3
 # union = my_set2_1.union(my_set2_2)
 # print(union)
@@ -108,21 +108,21 @@ print(my_set2_1)
 # # [print(value ** 2) for value in my_list8]
 
 # # Знакомство со словарями
-# childrens = ["Nastya", "Vlada", "Matvey"]
-#
-# person_zontov = {"name": "Vava",
-#           "age": 41,
-#           "childrens": childrens,
-#           "teacher": True,
-#           12: "Key_12"}
-#
-# math_dict = {0: "Четное число",
-#              1: "Не Четное число"}
-#
-# hillel_tichers = {"zontov": person_zontov,
-#                   "Kamiskiy": {}}
-#
-# # print(math_dict[0])
-# # print(math_dict[123%2])
-#
-# print(hillel_tichers["zontov"]["childrens"])
+childrens = ["Nastya", "Vlada", "Matvey"]
+
+person_zontov = {"name": "Vava",
+          "age": 41,
+          "childrens": childrens,
+          "teacher": True,
+          12: "Key_12"}
+
+math_dict = {0: "Четное число",
+             1: "Не Четное число"}
+
+hillel_tichers = {"zontov": person_zontov,
+                  "Kamiskiy": {}}
+
+# print(math_dict[0])
+# print(math_dict[123%2])
+
+print(hillel_tichers["zontov"]["childrens"])
