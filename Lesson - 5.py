@@ -79,14 +79,14 @@
 # Дана строка my_str, список str_index целых чисел в диапазоне от 0 до длинны строки, пустой список my_list.
 # Заполнить my_list символами из my_str, которые стоят на местах с индексами из str_index
 # """
-my_list = []
-my_str = "qwerty"
-str_index = [0, 5, 3, 3, 4]
-for index in str_index:
-    symbol = my_str[index]
-    my_list.append(symbol)
-    # my_list.append(my_str[index]) однострочный код
-print(my_list)
+# my_list = []
+# my_str = "qwerty"
+# str_index = [0, 5, 3, 3, 4]
+# for index in str_index:
+#     symbol = my_str[index]
+#     my_list.append(symbol)
+#     # my_list.append(my_str[index]) однострочный код
+# print(my_list)
 #
 #
 # """
@@ -96,10 +96,21 @@ print(my_list)
 # a) кол-во эл-тов одинаковое
 # б) кол-во эл-тов разное
 # """
-# my_list_1 = [10, 20, 30, 40, 50]
-# my_list_2 = [3, 4, 5, 6, 7]
-# my_result = []
+# my_list_6_1 = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+# my_list_6_2 = [3, 4, 5, 6, 7, 8]
+# my_result6 = []
 #
+# if len(my_list_6_2) < len(my_list_6_1):
+#     my_list_6_1, my_list_6_2 = my_list_6_2, my_list_6_1
+#
+# list_len6 = len(my_list_6_1)
+# for index in range(list_len6):
+#     my_result6.append(my_list_6_1[index])
+#     my_result6.append(my_list_6_2[index])
+#     # my_result6.extend([my_list_6_1[index], my_list_6_2[index]])
+# my_result6.append("")
+# my_result6.extend(my_list_6_2[list_len6:])
+# print(my_result6)
 #
 # """
 # 7)
@@ -107,44 +118,88 @@ print(my_list)
 # Создать список my_result в который вначале поместить четные элементы из my_list_1,
 # а потом все нечетные элементы из my_list_2.
 # """
-#
+# my_list_7_1 = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+# my_list_7_2 = [3, 4, 5, 6, 7, 8]
+# my_result7 = my_list_7_1[::2] + my_list_7_2[1::2]
+# print(my_result7)
 # """
 # 8)
 # Дано целое число. Определить сколько цифр в этом числе.
 # """
 # number = 746527310
+# print(len(str(number)))
 #
 # """
 # 9)
 # Дано целое число. Определить наибольшую цифру в этом числе.
 # """
 # number = 746527310
+# print(max(str(number)))
+# print(min(str(number)))
 #
 #
 # """
 # 10)
 # Дано целое число. Составить число с цифрами в обратном порядке.
 # """
-# number = 746527310
+# number10 = 746527310
+# print(int(str(number10)[::-1]))
 #
 #
 # """
 # 11)
 # Дано целое число. Составить число с цифрами в порядке возрастания.
 # """
-# number = 746527310
-#
-#
-# # сортировка списка
-# my_list = [3, 5, -6]
-#
-#
-# # сортировка копии списка
-# new_list = sorted(my_list)
+# number11 = 746527310
+# numb_list11 = list(str(number11))
+# numb_list11.sort(reverse=False)
+# str_numb11 = ''.join(numb_list11)
+# new_numb11 = int(str_numb11)
+# print(new_numb11)
+# #
+# #
+# # # сортировка списка
+# my_list11 = [3, 5, -6]
+# # my_list11.sort()
+# # print(my_list11)
+# #
+# #
+# # # сортировка копии списка
+# new_list11 = sorted(my_list11)
+# print(my_list11)
+# print(new_list11)
+
 #
 # # ключ сортировки, порядок списка
 #
 # """
 # Цикл с условием( while)
 # Игра с угадыванием числа.
-# """
+# ""
+# mind_number12 = 34
+# number12 = int(input('угадай число:'))
+# while number12 != mind_number12:
+#     try:
+#         if number12 < mind_number12:
+#             number12 = int(input("Bolshe"))
+#         else:
+#             number12 = int(input('Menshe'))
+#     except:
+#         number12 = int(input('celoe chislo'))
+# print('Molodec Ugadal')
+
+mind_number12 = 34
+# number12 = int(input('угадай число:'))
+solved = False
+while not solved:
+    try:
+        number12 = int(input('Vvedi chislo'))
+        if number12 < mind_number12:
+            number12 = print("Bolshe")
+        elif number > mind_number12:
+            number12 = print('Menshe')
+        else:
+            solved = true
+    except:
+        pass
+print('Molodec Ugadal')
