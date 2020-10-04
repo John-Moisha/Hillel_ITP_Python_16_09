@@ -54,17 +54,18 @@
 # my_str3 = "bla BLA carDDD"
 # print(len(set(my_str3.lower())))
 
-# my_set2_1 = {1, 2, 3}
-# my_set2_2 = {2, 3, 4}
+my_set2_1 = {1, 2, 3, 3, 5}
+my_set2_2 = {2, 3, 4, 2, 5, 5}
 
 # my_set2_1.add(7)
+
 # #1 и там и там №1 тетрадь возвращает
 # inter = my_set2_1.intersection(my_set2_2)
 # two_inter = inter
 # print(inter, my_set2_1, inter is two_inter)
 # #2 и там и там №1 тетрадь возвращает#
-# my_set2_1.intersection_update(my_set2_2)
-# print(my_set2_1)
+my_set2_1.intersection_update(my_set2_2)
+print(my_set2_1)
 # #3
 # union = my_set2_1.union(my_set2_2)
 # print(union)
@@ -85,18 +86,18 @@
 # print(my_set2_1)
 
 #### !!!!!!!!!!!!!
-my_alphabet = ''
-index_a = ord ('Z')
-# print(ord('a'), chr(98))
-print(index_a, chr(index_a -1))
-
-for index in range(ord('a'), ord('z') + 1):
-    my_alphabet += chr(index)
-print(my_alphabet)
-my_random = ','.join(set(my_alphabet))
-print(my_random)
-my_random = ','.join(set(my_random))
-print(my_random)
+# my_alphabet = ''
+# index_a = ord ('Z')
+# # print(ord('a'), chr(98))
+# print(index_a, chr(index_a -1))
+#
+# for index in range(ord('a'), ord('z') + 1):
+#     my_alphabet += chr(index)
+# print(my_alphabet)
+# my_random = ','.join(set(my_alphabet))
+# print(my_random)
+# my_random = ','.join(set(my_random))
+# print(my_random)
 
 #Гениратор списков
 
