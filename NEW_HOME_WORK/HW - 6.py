@@ -5,13 +5,23 @@
 # Если на четном - оставить без изменения.
 # Задание сделать с использованием enumerate.
 #
-my_list1 = ['qwe', 'rty', 'uio', 'asd', 'fgh', 'jkl']
-for index, value in enumerate(my_list1):
+
+my_list1_1 = ['qwe', 'rty', 'uio', 'asd', 'fgh', 'jkl']
+my_new_list1 = []
+for index, value in enumerate(my_list1_1):
     if index % 2 != 0:
-        my_list1[index] = value[::-1]
+        my_new_list1.append(value[::-1])
     else:
-        pass
-print("Задача 1:", my_list1)
+        my_new_list1.append(value)
+print("Задача 1:", my_new_list1)
+
+# my_list1_2 = ['qwe', 'rty', 'uio', 'asd', 'fgh', 'jkl']
+# for index, value in enumerate(my_list1_2):
+#     if index % 2 != 0:
+#         my_list1_2[index] = value[::-1]
+#     else:
+#         pass
+# print("Задача 1:", my_list1_2)
 
 # 2. Дан список строк my_list. Создать новый список в который поместить
 # элементы из my_list у которых первый символ - буква "a".
@@ -23,8 +33,15 @@ for value in my_list2:
             my_result_list2.append(value)
 print("Задача 2:", my_result_list2)
 
+#сразу не догадался можно чуть проще
+# my_list2 = ['qwe', 'arty', 'uio', 'asd', 'fgh', 'akl']
+# my_result_list2 =[]
+# for value in my_list2:
+#     if value[0] == 'a':
+#        my_result_list2.append(value)
+# print("Задача 2:", my_result_list2)
+#
 
-# 
 # 3. Дан список строк my_list. Создать новый список в который поместить
 # элементы из my_list в которых есть символ - буква "a" на любом месте.
 my_list3 = ['qwe', 'arty', 'uiao', 'asd', 'fgh', 'akl']
@@ -35,6 +52,13 @@ for value in my_list3:
             my_result_list3.append(value)
 print("Задача 3:", my_result_list3)
 
+#сразу не догадался можно чуть проще
+# my_list3 = ['qwe', 'arty', 'uiao', 'asd', 'fgh', 'akl']
+# my_result_list3 =[]
+# for value in my_list3:
+#     if 'a' in value:
+#         my_result_list3.append(value)
+# print("Задача 3:", my_result_list3)
 
 
 # 4. Дан список my_list в котором могум быть как строки так и целые числа.
@@ -57,6 +81,14 @@ result5 = []
 for s in set(my_str5):
     result5.append(s)
 print("Задача 5:", result5)
+
+# или те которые написаны один раз
+# result5_2 = []
+# for s in set(my_str5):
+#     if my_str5.count(s) == 1:
+#         result5_2.append(s)
+# print("Задача 5V2:", result5_2)
+
 
 
 # 6. Даны две строки. Создать список в который поместить те символы,
