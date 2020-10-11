@@ -21,7 +21,7 @@ print("Задача 1:", my_new_list1)
 #         my_list1_2[index] = value[::-1]
 #     else:
 #         pass
-# print("Задача 1:", my_list1_2)
+# print("Задача 1 v2:", my_list1_2)
 
 # 2. Дан список строк my_list. Создать новый список в который поместить
 # элементы из my_list у которых первый символ - буква "a".
@@ -39,8 +39,12 @@ print("Задача 2:", my_result_list2)
 # for value in my_list2:
 #     if value[0] == 'a':
 #        my_result_list2.append(value)
-# print("Задача 2:", my_result_list2)
+# print("Задача 2 v2:", my_result_list2)
 #
+# или можно вообще просто
+# my_list2 = ['qwe', 'arty', 'uio', 'asd', 'fgh', 'akl']
+# my_result_list2 = [value for value in my_list2 if value[0] == 'a']
+# print("Задача 2 v3,", my_result_list2)
 
 # 3. Дан список строк my_list. Создать новый список в который поместить
 # элементы из my_list в которых есть символ - буква "a" на любом месте.
@@ -52,13 +56,18 @@ for value in my_list3:
             my_result_list3.append(value)
 print("Задача 3:", my_result_list3)
 
+# v2
+# my_list3 = ['qwe', 'arty', 'uiao', 'asd', 'fgh', 'akl']
+# my_result_list3 =[value for value in my_list3 if 'a' in value]
+# print("Задача 3 v2", my_result_list3)
+
 #сразу не догадался можно чуть проще
 # my_list3 = ['qwe', 'arty', 'uiao', 'asd', 'fgh', 'akl']
 # my_result_list3 =[]
 # for value in my_list3:
 #     if 'a' in value:
 #         my_result_list3.append(value)
-# print("Задача 3:", my_result_list3)
+# print("Задача 3 v3:", my_result_list3)
 
 
 # 4. Дан список my_list в котором могум быть как строки так и целые числа.
@@ -72,22 +81,24 @@ for value in my_list4:
         pass
 print("Задача 4:", my_result4)
 
+# #4v2
+# my_list4 = ['list', 'int', 23, '54', 98, 101, '0']
+# my_result4 = [_ for _ in my_list4 if type(_) == str]
+# print("Задача 4v2:", my_result4)
 
 # 
 # 5. Дана строка my_str. Создать список в который поместить те символы из my_str,
 # которые встречаются в строке только один раз.
 my_str5 = 'privet medved, kak tvoi dela? hochu skazat, chto moi dela otlichni'
 result5 = []
-for s in set(my_str5):
-    result5.append(s)
+for s in my_str5:
+    if my_str5.count(s) == 1:
+        result5.append(s)
 print("Задача 5:", result5)
-
-# или те которые написаны один раз
-# result5_2 = []
-# for s in set(my_str5):
-#     if my_str5.count(s) == 1:
-#         result5_2.append(s)
-# print("Задача 5V2:", result5_2)
+# 5v2
+# my_str5 = 'privet medved, kak tvoi dela? hochu skazat, chto moi dela otlichni'
+# result5_2 = [s for s in my_str5 if my_str5.count(s) == 1]
+# print("Задача 5 v2:", result5_2)
 
 
 
@@ -137,7 +148,7 @@ print("Задача 8:", Persona8)
 
 # 9. Описать с помощью словаря следующую структуру (рецепт ненастоящего торта,
 # придумать и указать граммы для продуктов):
-KG = {50 : "50 грамм",
+KG = {50: "50 грамм",
       100: "100 грамм",
       200: "0,2 кг",
       500: "0,5 кг",
