@@ -43,7 +43,7 @@ def sort_ip_key(ip):
     return [int(part) for part in ip.split(".")]
 
 
-def generate_list_ip_address(number: int, musk=False, repeat=True, sort=False) -> list:
+def generate_list_ip_address(number: int, musk='', repeat=True, sort=False) -> list:
     ip_list = []
     for _ in range(number):
         if not musk:
