@@ -15,14 +15,14 @@ def bday_or_death(path):
     dict_b = {}
     for item in day_b:
         itempars = item.split('-')[0].strip()
-        key = item.split('-')[1].split("'")[0].strip()
+        key = item.split('-')[1].split("birthday")[0].strip()
         value = parse(itempars).strftime('%Y/%m/%d')
         dict_b.update({key: value})
 
     dict_d = {}
     for item in day_d:
         itempars = item.split('-')[0].strip()
-        key = item.split('-')[1].split("'")[0].strip()
+        key = item.split('-')[1].split("death")[0].strip()
         try:
             value = parse(itempars).strftime('%Y/%m/%d')
         except:
