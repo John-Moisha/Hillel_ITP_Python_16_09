@@ -25,7 +25,7 @@ print('1. ===>', 'длина:', len(gen_txt()), gen_txt())
 ################## 2
 def rand_chois_val(val):
     if val == 1:
-        t_or_f =['True', 'False']
+        t_or_f =[True, False]
         val = random.choice(t_or_f)
     if val == 2:
         val = random.randint(-100, 100)
@@ -74,4 +74,4 @@ def file_writer(path: str):
     else:
         raise Exception("Unsupported file format!")
 
-file_writer("/Users/clz/PycharmProject/Git Hillel Project/Hillel_ITP_Python_16_09/NEW_HOME_WORK/HW_10/test10.txt")
+file_writer("/Users/clz/PycharmProject/Git Hillel Project/Hillel_ITP_Python_16_09/NEW_HOME_WORK/HW_10/test10.json")
