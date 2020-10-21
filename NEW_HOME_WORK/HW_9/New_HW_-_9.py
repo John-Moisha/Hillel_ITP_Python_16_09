@@ -1,6 +1,6 @@
-from datetime import datetime
+
 from dateutil.parser import parse
-import re
+
 path = "../Files/authors.txt"
 # Дан файл authors.txt
 # Все пункты сделать как отдельные функции(можно создавать дополнительные вспомагательные функции)
