@@ -26,6 +26,6 @@ def f_path_to_folder(path="./"):
              "Folders": folders}
     return dicts
 #или можно сделать корневую папку через os.path.abspath(os.curdir)
-path = "./Test_file_folder"
+path = "../Test_file_folder"
 print_f = f_path_to_folder()
 print(print_f)

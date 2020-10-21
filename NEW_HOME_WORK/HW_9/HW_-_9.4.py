@@ -1,5 +1,5 @@
 from dateutil.parser import parse
-path = "../Files/authors.txt"
+path = "../../Files/authors.txt"
 
 def bday_or_death(path):
     file = open(path, "r")

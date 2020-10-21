@@ -79,14 +79,14 @@
 # Дана строка my_str, список str_index целых чисел в диапазоне от 0 до длинны строки, пустой список my_list.
 # Заполнить my_list символами из my_str, которые стоят на местах с индексами из str_index
 # """
-# my_list = []
-# my_str = "qwerty"
-# str_index = [0, 5, 3, 3, 4]
-# for index in str_index:
-#     symbol = my_str[index]
-#     my_list.append(symbol)
-#     # my_list.append(my_str[index]) однострочный код
-# print(my_list)
+my_list = []
+my_str = "qwerty"
+str_index = [0, 5, 3, 3, 4]
+for index in str_index:
+    symbol = my_str[index]
+    my_list.append(symbol)
+    # my_list.append(my_str[index]) однострочный код
+print(my_list)
 #
 #
 # """
@@ -190,16 +190,16 @@
 
 mind_number12 = 34
 # number12 = int(input('угадай число:'))
-solved = False
-while not solved:
-    try:
-        number12 = int(input('Vvedi chislo'))
-        if number12 < mind_number12:
-            number12 = print("Bolshe")
-        elif number > mind_number12:
-            number12 = print('Menshe')
-        else:
-            solved = true
-    except:
-        pass
-print('Molodec Ugadal')
+# solved = False
+# while not solved:
+#     try:
+#         number12 = int(input('Vvedi chislo'))
+#         if number12 < mind_number12:
+#             number12 = print("Bolshe")
+#         elif number > mind_number12:
+#             number12 = print('Menshe')
+#         else:
+#             solved = true
+#     except:
+#         pass
+# print('Molodec Ugadal')
