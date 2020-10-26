@@ -30,9 +30,9 @@ def from_text_to_digital(date_in_text: str) -> str:
 
 def list_to_dicts(line_from_list: list) -> dict:
 
-    # dict_name = {'name': str(line_from_list).split("-")[1].split("'")[0].strip()}
-    # dict_date = {'date': from_text_to_digital((str(line_from_list).split("-")[0].strip())[2:])}
-    # dict_name_date = {'name' : dict_name['name'], 'date': dict_date['date']}
+    dict_name = {'name': str(line_from_list).split("-")[1].split("'")[0].strip()}
+    dict_date = {'date': from_text_to_digital((str(line_from_list).split("-")[0].strip())[2:])}
+    dict_name_date = {'name' : dict_name['name'], 'date': dict_date['date']}
     #######
     dict_back = {}
     for line in line_from_list:
@@ -50,7 +50,7 @@ print(type(list_to_dicts(death_bwdil)), '2: ===>', list_to_dicts(death_bwdil))
 # {"name": "J. D. Salinger", "date": "01/01/1919"}]
 def from_dict_to_list_of_dicts(list_dicts: dict)-> list:
 
-    return [{key : list_dicts.get(key)}for key in list_dicts.keys()]
+    return [{key: list_dicts.get(key)} for key in list_dicts.keys()]
 
 print(type(from_dict_to_list_of_dicts(list_td)),'3. ===>', from_dict_to_list_of_dicts(list_td))
 
