@@ -1,8 +1,12 @@
 import requests
 import json
+import csv
+import time
 from random import randint
 
+star_time = time.time()
 url_req = "https://api.forismatic.com/api/1.0/"
+
 def get_requests(key=False):
     if not key:
         key = randint(1,99999)
@@ -33,10 +37,26 @@ def key_sort_author(dict_):
 
 to_file = sorted(list_with_requests, key=key_sort_author)
 
-def json_requests(path: str):
+def write_json_requests(path: str):
     with open(path, "w") as file:
         json.dump(to_file, file, ensure_ascii=False, indent=2)
-    print("Записано в файл завершена!\n", "Файл:", path)
+    end_time = time.time()
+    all_time = end_time - star_time
+    print("Записано в файл 'JSON' завершена!\n", f"За: {all_time}'s\n", "Файл:", path)
 
-path = "./Json_requests.json"
-json_requests(path)
+path_json = "Json_requests.json"
+write_json_requests(path_json)
+print("=========================")
+def write_csv_requests(path):
+    fieldsnames = list(to_file[0].keys())
+
+    with open(path, 'w') as file:
+        csvwriter = csv.DictWriter(file, fieldnames=fieldsnames, delimiter=',', lineterminator=f'\r\n --> ')
+        csvwriter.writeheader()
+        csvwriter.writerows(to_file)
+    end_time = time.time()
+    all_time = end_time - star_time
+    print("Записано в файл 'CSV' завершена!\n", f"За: {all_time}'s\n", "Файл:", path)
+
+path_csv = "csv_requests.csv"
+write_csv_requests(path_csv)
