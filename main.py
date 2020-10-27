@@ -1,18 +1,19 @@
-import datetime
+# import re
+# text_ = "c. 287 BC – 212 BC"
+# # split_text = text_
+# # print(split_text)
+# re_ = r'[0-9]+'
+# result = re.findall(re_, text_)
+# -212 -270
+# print(result)
 
-a = '1 January 1919'
-# b = datetime.datetime.strptime(a).strftime('%Y %d %m')
-print(b)
-# a = "9th February 1881 - Dostoyevsky's death"
-# b = "9th February 1881 - Dostoyevsky's death"
-# a_2 = a.split('-')[1].split("death")[0].strip()
-# b_2 = b.split('-')[1].split("'")[0].strip()
-# dict = {}
+# b = int(result[-1])
+# a = -int(result[-1])
+# list_ =[a, b]
+# print(sorted(list_))
 #
-# print(a_2)
-# print(b_2)
-
-
-
-#HW100
-
+# # print(int(result[-1]))
+# # print(-int(result[-1]))
+# # print(type(-int(result[-1])))
+# # print(result)
+#
