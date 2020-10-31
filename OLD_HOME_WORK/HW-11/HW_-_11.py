@@ -50,5 +50,6 @@ print("3. по Дате ===>", task_3)
 def key_len_text(dict_):
     return len(dict_["text"])
 task_4 = sorted(task_1, key=key_len_text)
+
 print("4. по Длине ==>", task_4)
 
