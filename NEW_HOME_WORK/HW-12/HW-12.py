@@ -32,7 +32,7 @@ class FileWriter:
                 raise Exception("Unsupported file format!")
         else:
             self.__file_data = __file_data
-        print(f"{self.__type_f} Записан в: {self.__path_data}, \nС Данными: \n----------\n{self.__file_data}\n")
+        print(f"{self.__type_f} Записан в: {self.__path_data} \nС Данными: \n----------\n{self.__file_data}\n")
 
         # Gen TXT
     def __gen_txt(self ,min_len=100, max_len=1000) -> str:
