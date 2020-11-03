@@ -1,0 +1,27 @@
+{
+   "filename": "444_on",
+   "width": 302,
+   "objects": [
+      {
+         "object": {
+            "class": "4",
+            "x_min": 0,
+            "x_max": 75
+         }
+      },
+      {
+         "object": {
+            "class": "4",
+            "x_min": 75,
+            "x_max": 150
+         }
+      },
+      {
+         "object": {
+            "class": "4",
+            "x_min": 150,
+            "x_max": 225
+         }
+      }
+   ]
+}

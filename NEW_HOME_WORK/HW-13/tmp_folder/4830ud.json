@@ -1,0 +1,34 @@
+{
+   "filename": "4830ud",
+   "width": 328,
+   "objects": [
+      {
+         "object": {
+            "class": "4",
+            "x_min": 0,
+            "x_max": 82
+         }
+      },
+      {
+         "object": {
+            "class": "8",
+            "x_min": 82,
+            "x_max": 164
+         }
+      },
+      {
+         "object": {
+            "class": "3",
+            "x_min": 164,
+            "x_max": 246
+         }
+      },
+      {
+         "object": {
+            "class": "0",
+            "x_min": 246,
+            "x_max": 328
+         }
+      }
+   ]
+}

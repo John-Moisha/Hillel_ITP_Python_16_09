@@ -93,11 +93,11 @@ class FileWriter:
             raise Exception("Unsupported file format!")
 
 
-my_writer_TXT = FileWriter("./text.txt")
+my_writer_TXT = FileWriter("text.txt")
 my_writer_TXT.write()
 
-my_writer_CSV = FileWriter("./text.csv")
+my_writer_CSV = FileWriter("text.csv")
 my_writer_CSV.write()
 
-my_writer_JSON = FileWriter("./text.json", "privet")
+my_writer_JSON = FileWriter("text.json", "privet")
 my_writer_JSON.write()

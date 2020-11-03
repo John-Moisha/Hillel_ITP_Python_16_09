@@ -17,3 +17,14 @@
 # # print(type(-int(result[-1])))
 # # print(result)
 #
+list_ = []
+
+txt = '_12_ab'
+if txt[0] != '_':
+    list_.append({"1":"a", "2": txt[0]})
+    print('отлично')
+elif txt[0] == '_':
+    print('hernya')
+
+print(list_)
+
