@@ -109,7 +109,7 @@ class Knight(Unit):
 
     @staticmethod
     def _choice_feature():
-        feature = choice(['Мечь', 'Топор', 'Пика'])
+        feature = choice(['Меч', 'Топор', 'Пика'])
         return feature
 
     def __init__(self, name, clan, feature=None):
@@ -133,36 +133,38 @@ class Knight(Unit):
 
 mage = Mage('Маг', 'Клан М')
 archer = Archer('Лучник', 'Клан Л')
-knight = Knight('Рыцарь', 'Клан р')
+knight = Knight('Рыцарь', 'Клан р', 'Меч')
+_dif = '*------------------*'
 
+print(_dif)
 print(f'\t\tМаг\n'
       f'Имя:\t\t {mage.name}\n'
       f'Клан:\t\t {mage.clan}\n'
       f'Здоровье:\t {mage.health}\n'
       f'Выличился:\t {mage.healthing()}\n'
-      f'Тип Магии:\t {mage.feature}\n'
+      f'Тип оружия:\t {mage.feature}\n'
       f'Сила:\t\t {mage.power}\n'
       f'Ловкость:\t {mage.agility}\n'
       f'Интелект:\t {mage.intelligence}\n'
       f'Интелект UP: {mage.intelligence_up()}\n')
-
+print(_dif)
 print(f'\t\tЛучник\n'
       f'Имя:\t\t {archer.name}\n'
       f'Клан:\t\t {archer.clan}\n'
       f'Здоровье:\t {archer.health}\n'
       f'Выличился: \t {archer.healthing()}\n'
-      f'Тип Магии:\t {archer.feature}\n'
+      f'Тип оружия:\t {archer.feature}\n'
       f'Сила:\t\t {archer.power}\n'
       f'Ловкость:\t {archer.agility}\n'
       f'Ловкость UP: {archer.agility_up()}\n'
       f'Интелект:\t {archer.intelligence}\n')
-
+print(_dif)
 print(f'\t\tРыцарь\n'
       f'Имя:\t\t {knight.name}\n'
       f'Клан:\t\t {knight.clan}\n'
       f'Здоровье:\t {knight.health}\n'
       f'Выличился:\t {knight.healthing()}\n'
-      f'Тип Магии:\t {knight.feature}\n'
+      f'Тип оружия:\t {knight.feature}\n'
       f'Сила:\t\t {knight.power}\n'
       f'Сила UP:\t {knight.power_up()}\n'
       f'Ловкость:\t {knight.agility}\n'
