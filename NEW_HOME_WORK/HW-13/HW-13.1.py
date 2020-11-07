@@ -32,14 +32,20 @@ print("▵ ABC",creat_triangle())
 
 #2
 def create_right_triangle(_t, S=100) -> tuple:
-    #        X ,    Y
-    _A = (_t[0], _t[1])
-    _B = (_Bx , _t[1])
-    _C = (_t[0], _Cy)
+    _Ax = _t[0]
+    _Ay = _t[1]
+    _Bx = _Ax
+    _By = ((2 * S) ** 0.5) + _Ay
+    _Cx = _By
+    _Cy = _Ay
+    _A = (_Ax, _Ay)
+    _B = (_Bx, _By)
+    _C = (_Cx, _Cy)
+
     triangle = (_A, _B, _C)
     return triangle
-
-print("◺ ABC",create_right_triangle())
+_A = (1,1)
+print("◺ ABC", create_right_triangle(_A))
 
 #3
 def S_triangle(_t):
@@ -55,4 +61,4 @@ def S_triangle(_t):
     # S▵ = ( (x1-x3)*(y2-y1) - (y1-y3)*(x2-x3) ) / 2
     return _Sa
 
-print("S▲",S_triangle(creat_triangle()))
+print("S▲", S_triangle(creat_triangle()))
